@@ -1,0 +1,224 @@
+{
+  "uuid": "5abc7661-eae5-4f4c-bf13-ffadabbede66",
+  "lastMigration": 32,
+  "name": "Untitled",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3000,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "86741e25-dc7d-4255-ad1e-274e312e17db",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "reservations",
+      "responses": [
+        {
+          "uuid": "b9b6e994-bbe8-46cb-ab47-b61e1ce767b9",
+          "body": "[\n  {\n    \"id\": 1,\n    \"guestName\": \"Jannick\",\n    \"guestEmail\": \"j@j.com\",\n    \"roomNumber\": 100,\n    \"checkInDate\": \"2023-08-08\",\n    \"checkOutDate\": \"2023-08-10\"\n  },\n  {\n    \"id\": 2,\n    \"guestName\": \"Maria\",\n    \"guestEmail\": \"m@m.com\",\n    \"roomNumber\": 120,\n    \"checkInDate\": \"2023-09-08\",\n    \"checkOutDate\": \"2023-09-10\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "a29d814e-5341-4b1d-a5be-97637c15f088",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "reservation/:id",
+      "responses": [
+        {
+          "uuid": "a8e6ae3d-dc90-4165-8dc4-8182a09ef163",
+          "body": "{\n  \"id\": 1,\n  \"guestName\": \"Jannick\",\n  \"guestEmail\": \"j@j.com\",\n  \"roomNumber\": 100,\n  \"checkInDate\": \"2023-08-08\",\n  \"checkOutDate\": \"2023-08-10\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "3c52a0e8-e1bb-4843-a20a-316c964799b2",
+      "type": "http",
+      "documentation": "",
+      "method": "delete",
+      "endpoint": "reservation/:id",
+      "responses": [
+        {
+          "uuid": "7a20b9e2-8903-4603-8a26-1e4e61d72524",
+          "body": "",
+          "latency": 0,
+          "statusCode": 204,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "99cb3b2e-310c-4015-9e61-208a2e08f1d3",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "reservation/",
+      "responses": [
+        {
+          "uuid": "b79554e3-92ba-469d-83e4-0d3d46f649c5",
+          "body": "",
+          "latency": 0,
+          "statusCode": 201,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "36851ed9-afee-4177-9f61-22c2fc33049b",
+      "type": "http",
+      "documentation": "",
+      "method": "put",
+      "endpoint": "reservation/:id",
+      "responses": [
+        {
+          "uuid": "06b64487-7df5-40ae-8a2d-f557f5660693",
+          "body": "",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "86741e25-dc7d-4255-ad1e-274e312e17db"
+    },
+    {
+      "type": "route",
+      "uuid": "a29d814e-5341-4b1d-a5be-97637c15f088"
+    },
+    {
+      "type": "route",
+      "uuid": "3c52a0e8-e1bb-4843-a20a-316c964799b2"
+    },
+    {
+      "type": "route",
+      "uuid": "99cb3b2e-310c-4015-9e61-208a2e08f1d3"
+    },
+    {
+      "type": "route",
+      "uuid": "36851ed9-afee-4177-9f61-22c2fc33049b"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}
